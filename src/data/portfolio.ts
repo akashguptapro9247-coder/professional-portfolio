@@ -92,7 +92,7 @@ export const projects: Project[] = [
     subtitle: "Production Portfolio Site",
     description: "Production-grade developer portfolio with Framer Motion animations, Next.js SSG for SEO optimization, and optimized Lighthouse performance scores.",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    live: "https://akashguptapro9247-coder.github.io/professional-portfolio",
+    live: "https://professional-portfolio-ochre-seven.vercel.app",
     github: "https://github.com/akashguptapro9247-coder/professional-portfolio",
     badge: null,
     featured: false,

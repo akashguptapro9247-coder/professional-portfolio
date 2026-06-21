@@ -12,7 +12,7 @@ export default function ResumePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <Link
             href="/"
-            className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors"
+            className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors cursor-pointer"
           >
             <FiArrowLeft size={16} />
             <span>Back to Portfolio</span>
@@ -39,11 +39,10 @@ export default function ResumePage() {
       </div>
 
       <div className="flex-1 px-4 sm:px-6 lg:px-8 pt-16">
-        <div className="max-w-5xl mx-auto h-[calc(100vh-4rem)] rounded-xl overflow-hidden border border-[var(--border)] bg-white">
-          <embed
+        <div className="max-w-5xl mx-auto h-[calc(100vh-4rem)] rounded-xl overflow-hidden border border-[var(--border)]">
+          <iframe
             src="/resume.pdf"
-            type="application/pdf"
-            style={{ border: "none", width: "100%", height: "100%" }}
+            className="w-full h-full"
             title="Akash Gupta Resume"
           />
         </div>

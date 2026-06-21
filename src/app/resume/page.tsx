@@ -1,26 +1,22 @@
 "use client";
 
-import { useCallback } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { personalInfo } from "@/data/portfolio";
 import { FiDownload, FiArrowLeft } from "react-icons/fi";
 
 export default function ResumePage() {
-  const goHome = useCallback(() => {
-    window.location.href = "/";
-  }, []);
-
   return (
     <div className="min-h-screen flex flex-col bg-[var(--bg-primary)]">
       <div className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-[rgba(10,10,15,0.95)] backdrop-blur-xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <button
-            onClick={goHome}
-            className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors cursor-pointer"
+          <Link
+            href="/"
+            className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors"
           >
             <FiArrowLeft size={16} />
             <span>Back to Portfolio</span>
-          </button>
+          </Link>
 
           <h1
             className="hidden sm:block text-sm font-semibold text-slate-200"
